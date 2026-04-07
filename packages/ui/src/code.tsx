@@ -1,11 +1,17 @@
-import { type JSX } from "react";
+import { HTMLAttributes, forwardRef } from "react";
 
-export function Code({
-  children,
-  className,
-}: {
-  children: React.ReactNode;
-  className?: string;
-}): JSX.Element {
-  return <code className={className}>{children}</code>;
-}
+const Code = forwardRef<HTMLElement, HTMLAttributes<HTMLElement>>(
+  ({ className = "", ...props }, ref) => {
+    return (
+      <code
+        ref={ref}
+        className={`rounded bg-white/10 px-[0.3em] py-[0.2em] text-sm font-mono ${className}`}
+        {...props}
+      />
+    );
+  }
+);
+
+Code.displayName = "Code";
+
+export { Code };

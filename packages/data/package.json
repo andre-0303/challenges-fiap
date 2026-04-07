@@ -1,0 +1,10 @@
+{
+  "name": "@repo/data",
+  "version": "0.0.0",
+  "private": true,
+  "license": "MIT",
+  "exports": {
+    "./companies": "./src/companies.ts",
+    "./challenges": "./src/challenges.ts"
+  }
+}

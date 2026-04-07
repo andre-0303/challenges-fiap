@@ -1,24 +1,21 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@import "tailwindcss";
+@source "../../../packages/ui/src/**/*.tsx";
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+@theme inline {
+  /* FIAP Color Palette */
+  --color-background: #0a0a0a;
+  --color-surface: #1a1a1a;
+  --color-foreground: #ffffff;
+  --color-muted: #a0a0a0;
+  --color-fiap-red: #ed1c24;
 
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
+  /* Difficulty Colors */
+  --color-easy: #22c55e;
+  --color-medium: #eab308;
+  --color-hard: #ed1c24;
 
-body {
-  color: var(--foreground);
-  background: var(--background);
+  /* Spacing */
+  --spacing-container: 76rem;
 }
 
 * {
@@ -27,24 +24,15 @@ body {
   margin: 0;
 }
 
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  background: var(--color-background);
+  color: var(--color-foreground);
+}
+
 a {
   color: inherit;
   text-decoration: none;
-}
-
-.imgDark {
-  display: none;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-
-  .imgLight {
-    display: none;
-  }
-  .imgDark {
-    display: unset;
-  }
 }

@@ -31,8 +31,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR" className={`${inter.variable} ${spaceGrotesk.variable} ${manrope.variable} font-sans`}>
-      <body className="bg-background text-foreground antialiased">
-        {children}
+      <body className="flex min-h-screen flex-col bg-background text-foreground antialiased">
+        <div className="flex flex-1 flex-col">{children}</div>
         <BottomNavBar />
       </body>
     </html>

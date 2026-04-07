@@ -10,10 +10,10 @@ const featuredChallenges = challenges.slice(0, 3);
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="flex flex-1 flex-col bg-background text-foreground">
       <Header />
 
-      <main className="flex flex-col pb-20">
+      <main className="flex flex-1 flex-col">
         {/* Hero Section */}
         <section className="relative flex min-h-[92vh] flex-col justify-center overflow-hidden bg-[#0A0A0A] pt-24 pb-32">
           {/* Radial glow — warm red/brown from top-right */}

@@ -15,8 +15,17 @@ export function CompanyLogoStrip() {
         </div>
 
         <div className="grid grid-cols-2 gap-6 md:grid-cols-3 lg:grid-cols-5">
-          {companies.map((company) => (
-            <CompanyCard key={company.id} company={company} />
+          {companies.map((company, index) => (
+            <div
+              key={company.id}
+              className={
+                index === companies.length - 1 && companies.length % 2 !== 0
+                  ? "col-span-2 flex justify-center md:col-span-1 md:block"
+                  : ""
+              }
+            >
+              <CompanyCard company={company} />
+            </div>
           ))}
         </div>
       </div>

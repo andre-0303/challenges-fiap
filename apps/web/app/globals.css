@@ -2,26 +2,36 @@
 @source "../../../packages/ui/src/**/*.tsx";
 
 @theme inline {
-  /* FIAP Color Palette */
-  --color-background: #0a0a0a;
-  --color-surface: #1a1a1a;
-  --color-foreground: #ffffff;
+  --color-background: #0A0A0A;
+  --color-surface: #1A1A1A;
+  --color-surface-container: #201f1f;
+  --color-surface-container-low: #1c1b1b;
+  --color-surface-container-high: #2a2a2a;
+  --color-surface-container-highest: #353534;
+  --color-foreground: #e5e2e1;
+  --color-foreground-secondary: #a0a0a0;
+  --color-fiap-red: #ED1C24;
+  --color-fiap-red-soft: #ff544b;
   --color-muted: #a0a0a0;
-  --color-fiap-red: #ed1c24;
+  --color-outline-variant: #5e3f3c;
 
   /* Difficulty Colors */
   --color-easy: #22c55e;
-  --color-medium: #eab308;
-  --color-hard: #ed1c24;
+  --color-easy-bg: rgba(34, 197, 94, 0.15);
+  --color-medium: #F7BE1D;
+  --color-medium-bg: rgba(247, 190, 29, 0.15);
+  --color-hard: #ED1C24;
+  --color-hard-bg: rgba(147, 0, 10, 0.3);
+  --color-tertiary: #f7be1d;
+  --color-tertiary-container: #b68a00;
+  --color-error-container: #93000a;
 
   /* Spacing */
   --spacing-container: 76rem;
-}
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+  /* Fonts */
+  --font-headline: var(--font-space-grotesk);
+  --font-label: var(--font-manrope);
 }
 
 html,
@@ -35,4 +45,14 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+/* Stitch Design System Utilities */
+.kinetic-gradient {
+  background: linear-gradient(135deg, var(--color-fiap-red-soft) 0%, var(--color-fiap-red) 100%);
+}
+
+.glass-card {
+  background: rgba(53, 53, 52, 0.7);
+  backdrop-filter: blur(20px);
 }

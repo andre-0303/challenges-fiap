@@ -1,5 +1,9 @@
 # ChallengesON — CLAUDE.md
 
+## Skills
+Antes de criar qualquer componente visual ou página, leia e siga 
+as instruções em SKILL-ui-ux.md para garantir qualidade de design.
+
 ## O que é este projeto
 Plataforma web da FIAP onde empresas parceiras publicam desafios 
 práticos e alunos os resolvem para aprender com problemas reais.

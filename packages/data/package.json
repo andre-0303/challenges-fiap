@@ -4,6 +4,7 @@
   "private": true,
   "license": "MIT",
   "exports": {
+    ".": "./src/index.ts",
     "./companies": "./src/companies.ts",
     "./challenges": "./src/challenges.ts"
   }

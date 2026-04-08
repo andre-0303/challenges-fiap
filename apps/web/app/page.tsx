@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
-import { Header } from "@repo/ui/Header";
 import { Button } from "@repo/ui/Button";
 import { ChallengeCard } from "@repo/ui/ChallengeCard";
 import { CompanyLogoStrip } from "@repo/ui/CompanyLogoStrip";
@@ -11,8 +10,6 @@ const featuredChallenges = challenges.slice(0, 3);
 export default function Home() {
   return (
     <div className="flex flex-1 flex-col bg-background text-foreground">
-      <Header />
-
       <main className="flex flex-1 flex-col">
         {/* Hero Section */}
         <section className="relative flex min-h-[92vh] flex-col justify-center overflow-hidden bg-[#0A0A0A] pt-24 pb-32">
@@ -40,8 +37,8 @@ export default function Home() {
 
             {/* Description */}
             <p className="mt-6 max-w-[480px] text-base leading-relaxed text-white/60">
-              A plataforma definitiva para engenheiros de alta performance. Encare
-              desafios técnicos reais de empresas líderes.
+              A plataforma definitiva para engenheiros de alta performance.
+              Encare desafios técnicos reais de empresas líderes.
             </p>
 
             {/* Buttons row */}
@@ -104,7 +101,7 @@ export default function Home() {
           <div className="grid grid-cols-1 gap-6 md:gap-8 md:grid-cols-2 lg:grid-cols-3">
             {featuredChallenges.map((challenge) => {
               const company = companies.find(
-                (c) => c.id === challenge.companyId
+                (c) => c.id === challenge.companyId,
               );
               return (
                 <ChallengeCard

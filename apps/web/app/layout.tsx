@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Space_Grotesk, Manrope } from "next/font/google";
 import "./globals.css";
 import Footer from "@repo/ui/Footer";
+import { Header } from "@repo/ui/Header";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -35,6 +36,7 @@ export default function RootLayout({
       className={`${inter.variable} ${spaceGrotesk.variable} ${manrope.variable} font-sans`}
     >
       <body className="flex min-h-screen flex-col bg-background text-foreground antialiased">
+        <Header />
         <div className="flex flex-1 flex-col">{children}</div>
         <Footer />
       </body>

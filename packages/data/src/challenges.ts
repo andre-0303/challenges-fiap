@@ -41,9 +41,9 @@ export const challenges: Challenge[] = [
     technologies: ["TypeScript", "Node.js", "Redis"],
   },
   {
-    id: "magalu-catálogo-produtos",
+    id: "magalu-catalogo-produtos",
     title: "Catálogo de Produtos Escalável",
-    slug: "magalu-catálogo-produtos",
+    slug: "magalu-catalogo-produtos",
     companyId: "magalu",
     description:
       "Construa uma API de catálogo capaz de lidar com milhões de SKUs com alta disponibilidade.",
@@ -74,7 +74,7 @@ export const challenges: Challenge[] = [
     description:
       "Crie um sistema de filas virtual para restaurantes com estimativa de tempo de preparo.",
     longDescription:
-      "Simule o comportamento de filas em restaurantes virtuais do iFood, considerando tempo de preparo, number de cozinheiros e ordem dos pedidos. O objetivo é minimizar o tempo médio de espera.",
+      "Simule o comportamento de filas em restaurantes virtuais do iFood, considerando tempo de preparo, número de cozinheiros e ordem dos pedidos. O objetivo é minimizar o tempo médio de espera.",
     difficulty: "facil",
     skills: ["Estruturas de Dados", "Simulação", "Lógica"],
     technologies: ["TypeScript"],

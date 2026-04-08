@@ -7,5 +7,10 @@
     ".": "./src/index.ts",
     "./companies": "./src/companies.ts",
     "./challenges": "./src/challenges.ts"
+  },
+  "devDependencies": {
+    "@repo/types": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "typescript": "5.9.2"
   }
 }

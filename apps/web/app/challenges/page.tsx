@@ -33,7 +33,7 @@ export default function ChallengesPage() {
 
       return tech.includes(cat);
     });
-  }, [selectedCategory]);
+  }, [selectedCategory, challenges]);
 
   const totalPages = Math.ceil(filteredChallenges.length / ITEMS_PER_PAGE);
   const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
@@ -49,7 +49,7 @@ export default function ChallengesPage() {
 
   return (
     <>
-      <section className="relative flex min-h-[92vh] flex-col overflow-hidden bg-[#0A0A0A] pt-24 pb-20">
+      <section className="relative flex min-h-[92vh] flex-col overflow-hidden bg-background pt-24 pb-20">
         <div className="pointer-events-none absolute -right-32 -top-32 h-[700px] w-[700px] rounded-full bg-[radial-gradient(circle,rgba(237,28,36,0.15)_0%,rgba(120,20,10,0.08)_40%,transparent_70%)]" />
         <div className="pointer-events-none absolute right-0 top-0 h-[500px] w-[500px] rounded-full bg-[radial-gradient(circle,rgba(180,60,30,0.10)_0%,transparent_60%)] blur-[40px]" />
 

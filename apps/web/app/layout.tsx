@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Space_Grotesk, Manrope } from "next/font/google";
 import "./globals.css";
-import { BottomNavBar } from "@repo/ui/BottomNavBar";
+import Footer from "@repo/ui/Footer";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -30,10 +30,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR" className={`${inter.variable} ${spaceGrotesk.variable} ${manrope.variable} font-sans`}>
+    <html
+      lang="pt-BR"
+      className={`${inter.variable} ${spaceGrotesk.variable} ${manrope.variable} font-sans`}
+    >
       <body className="flex min-h-screen flex-col bg-background text-foreground antialiased">
         <div className="flex flex-1 flex-col">{children}</div>
-        <BottomNavBar />
+        <Footer />
       </body>
     </html>
   );

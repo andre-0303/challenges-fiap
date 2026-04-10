@@ -21,9 +21,8 @@ export function AcceptChallengeButton() {
 
       {showNotice && (
         <div className="rounded-2xl border border-fiap-red/20 bg-fiap-red/8 px-4 py-3 text-sm leading-relaxed text-white/78">
-          Submissões ainda não estão liberadas. Você já pode estudar o
-          problema, montar a solução localmente e se preparar para enviar em
-          breve.
+          Submissões ainda não estão liberadas. Você já pode estudar o problema,
+          montar a solução localmente e se preparar para enviar em breve.
         </div>
       )}
     </div>

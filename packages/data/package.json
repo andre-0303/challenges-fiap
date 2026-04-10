@@ -8,6 +8,9 @@
     "./companies": "./src/companies.ts",
     "./challenges": "./src/challenges.ts"
   },
+  "scripts": {
+    "build": "echo 'Building @repo/data'"
+  },
   "devDependencies": {
     "@repo/types": "workspace:*",
     "@repo/typescript-config": "workspace:*",

@@ -3,7 +3,7 @@
   "tasks": {
     "build": {
       "dependsOn": ["^build"],
-      "outputs": [".next/**", "!.next/cache/**"],
+      "outputs": [".next/**", "!.next/cache/**", "dist/**"],
       "inputs": ["$TURBO_DEFAULT$", "src/**", "*.tsx", "*.ts", "package.json"]
     },
     "dev": {

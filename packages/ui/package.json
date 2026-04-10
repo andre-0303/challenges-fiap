@@ -3,7 +3,18 @@
   "version": "0.0.0",
   "private": true,
   "exports": {
-    "./*": "./src/*.tsx"
+    ".": "./src/index.ts",
+    "./Button": "./src/Button.tsx",
+    "./Header": "./src/Header.tsx",
+    "./Footer": "./src/Footer.tsx",
+    "./ChallengeCard": "./src/ChallengeCard.tsx",
+    "./CompanyCard": "./src/CompanyCard.tsx",
+    "./CompanyLogoStrip": "./src/CompanyLogoStrip.tsx",
+    "./Pagination": "./src/Pagination.tsx",
+    "./BottomNavBar": "./src/BottomNavBar.tsx",
+    "./Navbar": "./src/Navbar.tsx",
+    "./TerminalCard": "./src/TerminalCard.tsx",
+    "./Card": "./src/Card.tsx"
   },
   "scripts": {
     "lint": "eslint . --max-warnings 0",

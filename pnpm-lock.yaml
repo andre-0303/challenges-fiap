@@ -21,10 +21,10 @@ importers:
   apps/web:
     dependencies:
       '@repo/data':
-        specifier: workspace:^
+        specifier: workspace:*
         version: link:../../packages/data
       '@repo/types':
-        specifier: workspace:^
+        specifier: workspace:*
         version: link:../../packages/types
       '@repo/ui':
         specifier: workspace:*

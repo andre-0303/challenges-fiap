@@ -12,8 +12,8 @@
     "check-types": "next typegen && tsc --noEmit"
   },
   "dependencies": {
-    "@repo/data": "workspace:^",
-    "@repo/types": "workspace:^",
+    "@repo/data": "workspace:*",
+    "@repo/types": "workspace:*",
     "@repo/ui": "workspace:*",
     "@tailwindcss/postcss": "^4.2.2",
     "framer-motion": "^12.38.0",

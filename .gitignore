@@ -39,5 +39,6 @@ yarn-error.log*
 
 # Claude Code
 .claude/
+!.claude/agents/
 
 refactor-home-plan.md

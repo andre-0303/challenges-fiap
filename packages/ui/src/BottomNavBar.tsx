@@ -24,6 +24,10 @@ export function BottomNavBar() {
       return pathname === "/";
     }
 
+    if (href === "/companies") {
+      return pathname === "/companies" || pathname.startsWith("/companies/");
+    }
+
     return pathname === href || pathname.startsWith(`${href}/`);
   };
 
